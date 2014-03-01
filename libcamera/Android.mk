@@ -19,6 +19,10 @@ LOCAL_CFLAGS:= -DDLOPEN_LIBMMCAMERA=$(DLOPEN_LIBMMCAMERA)
 ## more ADSP memory. Use 0xa68000 as pool size in kernel to test
 LOCAL_CFLAGS+= -DNUM_PREVIEW_BUFFERS=2 -D_ANDROID_
 
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),chacha)
+   LOCAL_CFLAGS+= -DCHACHA
+endif
+
 LOCAL_C_INCLUDES+= \
     $(TARGET_OUT_HEADERS)/mm-camera \
     $(TARGET_OUT_HEADERS)/mm-still/jpeg \
@@ -47,6 +51,10 @@ LOCAL_MODULE_PATH    := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE         := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_SRC_FILES      := cameraHal.cpp
 LOCAL_PRELINK_MODULE := false
+
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),chacha)
+   LOCAL_CFLAGS+= -DCHACHA
+endif
 
 LOCAL_SHARED_LIBRARIES := liblog libdl libutils libcamera_client libbinder libcutils libhardware libui libcamera
 LOCAL_C_INCLUDES       := frameworks/base/services/ frameworks/base/include
