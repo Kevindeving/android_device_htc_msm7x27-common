@@ -33,10 +33,6 @@ PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 # frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
 
-# wifi-ap interface
-PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.ap.interface=athap0
-
 # USB
 PRODUCT_COPY_FILES += \
     device/htc/msm7x27-common/init.msm7x27.usb.rc:root/init.msm7x27.usb.rc
