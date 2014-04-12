@@ -104,7 +104,7 @@ TARGET_SCREEN_WIDTH := 320
 
 ### Recovery
 #BOARD_USES_RECOVERY_CHARGEMODE := true
-BOARD_CUSTOM_GRAPHICS := device/htc/msm7x27-common/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/htc/msm7x27-common/recovery/graphics.c
 BOARD_USES_MMCUTILS := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
