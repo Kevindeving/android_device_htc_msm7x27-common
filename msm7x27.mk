@@ -91,7 +91,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ## Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=160 \
     debug.sf.hw=1 \
     debug.sf.no_hw_vsync=1 \
     debug.gr.numframebuffers=2 \
