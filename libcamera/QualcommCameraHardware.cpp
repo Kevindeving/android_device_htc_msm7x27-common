@@ -3186,7 +3186,7 @@ static CameraInfo sCameraInfo[] = {
 #else
         90,  /* orientation */
 #endif
-#ifdef QCOM_HARDWARE
+#if 0
         0,   /* mode */
 #endif
     }
