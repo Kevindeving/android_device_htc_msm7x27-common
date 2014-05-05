@@ -3382,7 +3382,7 @@ void QualcommCameraHardware::debugShowVideoFPS() const
 }
 void QualcommCameraHardware::receivePreviewFrame(struct msm_frame *frame)
 {
-//    ALOGV("receivePreviewFrame E");
+    ALOGV("receivePreviewFrame E");
 
     if (!mCameraRunning) {
         ALOGE("ignoring preview callback--camera has been stopped");
@@ -3404,9 +3404,9 @@ void QualcommCameraHardware::receivePreviewFrame(struct msm_frame *frame)
     // Find the offset within the heap of the current buffer.
     ssize_t offset_addr =
         (ssize_t)frame->buffer - (ssize_t)mPreviewHeap->mHeap->base();
-	//ALOGV("offset_addr=0x%X", (unsigned int)offset_addr);
+	ALOGV("offset_addr=0x%X", (unsigned int)offset_addr);
     ssize_t offset = offset_addr / mPreviewHeap->mAlignedBufferSize;
-	//ALOGV("offset=0x%X", (unsigned int)offset);
+	ALOGV("offset=0x%X", (unsigned int)offset);
 
     common_crop_t *crop = (common_crop_t *) (frame->cropinfo);
 
@@ -3443,7 +3443,7 @@ void QualcommCameraHardware::receivePreviewFrame(struct msm_frame *frame)
     }
     mInPreviewCallback = false;
 
-//    ALOGV("receivePreviewFrame X");
+    ALOGV("receivePreviewFrame X");
 }
 
 
