@@ -37,7 +37,6 @@
         android:mountPoint="/storage/sdcard0"
         android:storageDescription="@string/storage_sd_card"
         android:mtpReserve="100"
-        android:emulated="false"
         android:removable="true"
         android:primary="true"
         android:emulated="false" />     
