@@ -110,7 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     settings.display.brightness=100 \
     ro.com.google.locationfeatures=0 \
     ro.setupwizard.enable_bypass=1 \
-    persist.sys.usb.config=mass_storage,adb \
+    persist.sys.usb.config=mtp,adb \
     persist.sys.purgeable_assets=1
 
 # Disable ADB authentication until it works
