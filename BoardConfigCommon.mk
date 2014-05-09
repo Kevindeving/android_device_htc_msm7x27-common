@@ -103,6 +103,5 @@ TARGET_FORCE_CPU_UPLOAD := true
 
 ### Browser
 JS_ENGINE := v8
-HTTP := chrome
 ENABLE_JSC_JIT := true
 ENABLE_WEBGL := true
