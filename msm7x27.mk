@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x27-common/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
     device/htc/msm7x27-common/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
 
+# Boot animation
+PRODUCT_COPY_FILES += \
+    device/htc/msm7x27-common/bootanimation.zip:system/media/bootanimation.zip
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
