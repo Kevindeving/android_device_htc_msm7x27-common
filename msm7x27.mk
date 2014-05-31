@@ -100,7 +100,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     dalvik.vm.checkjni=false \
     dalvik.vm.dexopt-data-only=1 \
-    dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y \
     dalvik.vm.heapstartsize=5m \
     dalvik.vm.heapgrowthlimit=24m \
     dalvik.vm.heapsize=64m
