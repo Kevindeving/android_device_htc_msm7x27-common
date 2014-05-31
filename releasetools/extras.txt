@@ -12,6 +12,9 @@ app/Exchange2.apk
 app/Email.apk
 app/Email2.apk
 priv-app/CMUpdater.apk
+app/Calendar.apk
+app/BasicDreams.apk
+app/WhisperPush.apk
 
 # Video editor (5MB)
 app/VideoEditor.apk
